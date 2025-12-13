@@ -5,3 +5,4 @@ function demo(){
 }
 
 demo();
+console.log("hello");
