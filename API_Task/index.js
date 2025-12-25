@@ -4,13 +4,19 @@ const app = express();
 const morgan = require("morgan");
 const helmet = require('helmet');
 const todos = require('./Router/todos');
+const mongoose = require("mongoose");
+
+
 app.use(helmet());
 app.use(express.json());
 // app.get("/", (req, res) => {
 //   res.send("TaskTreak Project!");
 // });
 
-
+mongoose
+  .connect("mongodb://localhost:27017/todos")
+  .then(() => console.log("DataBase Connect Succfully!!"))
+  .catch((err) => console.log(err));
 
 // app.use((req,res,next)=>{
 //   console.log(`${req.method} ${req.url}`);
