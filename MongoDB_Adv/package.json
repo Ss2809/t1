@@ -1,0 +1,15 @@
+{
+  "name": "mongodb_adv",
+  "version": "1.0.0",
+  "main": "ref.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mongoose": "^9.0.2"
+  }
+}
