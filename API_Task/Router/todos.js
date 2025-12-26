@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Todo = require("../models/todos");
-const { Await } = require("react-router-dom");
+
 const todoArr = [
   {
     id: 1,
